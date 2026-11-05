@@ -1,8 +1,5 @@
 <title>Imperius Sign-In</title>
 
-<script>
-  HANKO_API_URL=https://95708629-f276-412a-8f48-43aa4a8c65e9.hanko.io
-</script>
 
 <body>
   <hanko-auth />
@@ -19,7 +16,6 @@
 
   <script type="module">
     import { register } from "https://esm.run/@teamhanko/hanko-elements";
-
     const { hanko } = await register(https://95708629-f276-412a-8f48-43aa4a8c65e9.hanko.io);
 
     hanko.onSessionCreated(() => {
