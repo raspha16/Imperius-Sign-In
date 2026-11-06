@@ -5,13 +5,18 @@
 <script
   
 HANKO_API_URL="https://95708629-f276-412a-8f48-43aa4a8c65e9.hanko.io/" src="config.js">
+type="module">
+  import { register } from "https://esm.sh";
   
-cors: {
-origin: [‘https://xxxxxx.github.io’, ‘http://localhost:5000’],
-methods: ‘GET,HEAD,PUT,PATCH,DELETE’,
-},
+  // Initialize Hanko with your dedicated Cloud API URL
+  const HANKO_API_URL = "https://95708629-f276-412a-8f48-43aa4a8c65e9.hanko.io/"; 
+  await register(hankoApiUrl);
+
+
 
 </script>
+
+<hanko-auth></hanko-auth>
 
 <body>
   <hanko-auth />
@@ -36,3 +41,8 @@ methods: ‘GET,HEAD,PUT,PATCH,DELETE’,
     });
   </script>
 </body>
+
+
+
+
+
